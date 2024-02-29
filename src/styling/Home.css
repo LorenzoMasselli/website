@@ -49,10 +49,9 @@
 
 .landing__work {
     position: absolute;
-    top: -7%;
+    top: -12%;
     right: -15%;
     width: 1.5rem;
-    transform: translate(-50%, -50%);
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../assets/savore_home_image.jpg"); */
     /* background-size:     cover;                     
     background-repeat:   no-repeat;
@@ -86,16 +85,18 @@
     overflow-x: visible;
 }
 .mockup__video {
-    background-color: #ECF3F9;
+    background-color: #f8f9fa;
     height: 100%;
     padding: 2rem 1.5rem;
     box-sizing: border-box;
+    /* border-radius: 18px; */
 }
 .mockup__image {
-    background-color: #ECF3F9;
+    background-color: #f8f9fa;
     height: 100%;
     padding: 2rem 1.5rem;
     box-sizing: border-box;
+    /* border-radius: 18px; */
 }
 
 
@@ -173,6 +174,7 @@
 .tech {
     display: flex;
     gap: 0.5rem;
+    justify-content: flex-end;
 }
 
 .tech__bubble {
@@ -183,11 +185,12 @@
     font-size: 0.7rem;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 500;
+    margin: 0.2rem 0rem;
+    white-space: nowrap;
 }
 
-.work__image {
-    background-color: #ECF3F9;
-    height: 100%;
+.work__image__hover {
+    background-color: #f8f9fa;
     padding: 1.3rem 0.7rem;
     box-sizing: border-box;
     position: absolute;
@@ -201,7 +204,7 @@
     display: none;
 }
 
-.recent__work__item:hover .work__image {
+.recent__work__item:hover .work__image__hover {
     display: block;
 }
 
@@ -217,4 +220,43 @@
 
 .recent__work__item:hover {
     cursor: pointer;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.home__skills {
+    padding: 0.5rem 2rem;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.column_grid_3 {
+    grid-column-gap: 0.5vw;
+    grid-row-gap: 0vw;
+    grid-template-rows: max-content;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-auto-rows: max-content;
+    grid-auto-columns: 1fr;
+    display: grid;
+    text-align: center;
+}
+
+.link {
+    background-image: linear-gradient(black, black);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    background-size: 100% 0.1em;
 }

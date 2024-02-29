@@ -1,0 +1,77 @@
+footer {
+    height: 30rem;
+    background-color: #1A1A1A;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+.footer__bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+footer div:first-child {
+    height: 88%;
+}
+
+.footer_heading {
+    color: #a8a8a8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.footer_text {
+    font-size: 0.84rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__top_head {
+    font-size: 4rem;
+}
+
+footer button {
+    font-size: 0.8rem;
+    background: linear-gradient(to right, white 50%, rgba(0, 0, 0, 0) 50%);
+    /* background-color: rgba(255, 255, 255, 0); */
+    border: 1px solid white;
+    color: white;
+    border-radius: 24px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+footer button:hover {
+    font-size: 0.8rem;
+    /* background-color: rgb(255, 255, 255); */
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, white 50%); */
+    border: 1px solid white;
+    color: black;
+    cursor: pointer;
+    background-position: left bottom;
+}
