@@ -35,18 +35,6 @@ function Home() {
           document.querySelector('.mockup_image_container').style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, ${transformValue}, 0, 0, 1)`;
       }
 
-    //   const handleMouseMove = (e) => {
-    //     const image = e.target;
-    //     const rect = image.getBoundingClientRect();
-    //     const offsetX = e.clientX - rect.left;
-    //     const moveX = (offsetX - rect.width / 2) / 10; // Adjust the division value for sensitivity
-    //     image.style.left = `${moveX}%`;
-    // };
-
-    // const handleMouseLeave = (e) => {
-    //     e.target.style.transform = 'translate(0, 0)';
-    // };
-
   return (
     <>
         <div className="home">
@@ -81,32 +69,34 @@ function Home() {
         <div className='recent_work'>
             <h4 className='home__header'>Recent work</h4>
             <div className="recent_work_list">
-                <ul className='recent__work__container'>
-                    <li className='recent__work__item'>
-                        <img className="work__image__hover" src={savore} alt="render website image"/>
-                        <div className='recent__header'>Savore</div>
-                        <div>Design & Development</div>
-                        <div className='tech'>
-                            <div>Restaurant</div>
-                        </div>
-                    </li>
-                    <li className='recent__work__item'>
-                        <img className="work__image__hover" src={barhop} alt="render website image"/>
-                        <div className='recent__header'>Barhop</div>
-                        <div>Design & Development</div>
-                        <div className='tech'>
-                            <div>Entertainment</div>
-                        </div>
-                    </li>
-                    <li className='recent__work__item'>
-                        <img className="work__image__hover" src={render} alt="render website image"/>
-                        <div className='recent__header'>Render</div>
-                        <div>Design & Development</div>
-                        <div className='tech'>
-                            <div>Art</div>
-                        </div>
-                    </li>
-                </ul>
+                <Link to="/work" className='recent__link'>
+                    <ul className='recent__work__container'>
+                        <li className='recent__work__item'>
+                            <img className="work__image__hover" src={savore} alt="render website image"/>
+                            <div className='recent__header'>Savore</div>
+                            <div className='recent__header'>Design & Development</div>
+                            <div className='tech recent__header'>
+                                <div>Restaurant</div>
+                            </div>
+                        </li>
+                        <li className='recent__work__item'>
+                            <img className="work__image__hover" src={barhop} alt="render website image"/>
+                            <div className='recent__header'>Barhop</div>
+                            <div className='recent__header'>Design & Development</div>
+                            <div className='tech recent__header'>
+                                <div>Entertainment</div>
+                            </div>
+                        </li>
+                        <li className='recent__work__item'>
+                            <img className="work__image__hover" src={render} alt="render website image"/>
+                            <div className='recent__header'>Render</div>
+                            <div className='recent__header'>Design & Development</div>
+                            <div className='tech recent__header'>
+                                <div>Art</div>
+                            </div>
+                        </li>
+                    </ul>
+                </Link>
             </div>
         </div>
         <div className='home__skills'>

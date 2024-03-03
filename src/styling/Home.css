@@ -191,8 +191,6 @@
 }
 
 .work__image__hover {
-    background-color: #f8f9fa;
-    padding: 1.3rem 0.7rem;
     box-sizing: border-box;
     position: absolute;
     left: 20%;
@@ -203,6 +201,7 @@
     transition: opacity 0.3s;
     z-index: 4;
     display: none;
+    border: 0.2px solid black;
 }
 
 .recent__work__item:hover .work__image__hover {
@@ -214,9 +213,7 @@
 }
 
 .recent__work__item:hover .recent__header {
-    color: rgba(0, 0, 0, 0.6);
-    padding-left: 1rem;
-    transition: padding-left 0.5s;
+    font-weight: 800;
 }
 
 .recent__work__item:hover {
@@ -260,4 +257,9 @@
 .link:focus,
 .link:active {
     background-size: 100% 0.1em;
+}
+
+.recent__link {
+    text-decoration: none;
+    color: inherit;
 }

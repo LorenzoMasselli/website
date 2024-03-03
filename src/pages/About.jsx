@@ -1,8 +1,9 @@
-// import React from 'react'
-
 import "../styling/About.css"
 
 function About() {
+
+
+
   return (
     <>
       <div className="about__container">
