@@ -30,7 +30,7 @@ function About() {
                   <span className="work__role">Professional Rugby Player</span>
                 </div>
               </div>
-              <p className='about__overview'>Throughout my work experience, I have developed critical thinking and analytical abilities, which enable me to approach complex problems strategically and deliver high quality solutions. My experience & my career in professional sports has enabled me to work really well in a high performance team environment, where I collaborate and communicate well. These skills empower me to thrive in the dynamic tech industry.</p>
+              <p className='about__overview'>Throughout my work experience, I have developed critical thinking and analytical abilities, which enable me to approach complex problems strategically and deliver high quality solutions. My experience & my career in professional sports has enabled me to work efficiently in a high performance team environment, where I collaborate and communicate well. These skills empower me to thrive in the dynamic tech industry.</p>
             </div>
             <div className='horizontal-line-container'><div className='horizontal-line-about'></div></div>
             <div className='about__skills'>
