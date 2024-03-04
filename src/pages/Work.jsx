@@ -90,7 +90,7 @@ const [collapsedItems, setCollapsedItems] = useState("");
   return (
     <>
       <div className='work'>
-            <h4 className='work__subheader'>From ideation to deployment, I turn web app goals into reality through innovative design and development</h4>
+            <h4 className='work__subheader'>From ideation to deployment, I turn web app ideas into reality through innovative design and development</h4>
             <h4 className='work__header'>My Work</h4>
             <div className="work__container">
                 <ul className='work__list'>
