@@ -9,6 +9,7 @@ function App() {
 
   return (
     <Router>
+      <SpeedInsights />
       <Navbar />
       <AppRoutes />
       <Footer />
